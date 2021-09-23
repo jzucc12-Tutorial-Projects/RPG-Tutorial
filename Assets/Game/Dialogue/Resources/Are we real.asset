@@ -1,0 +1,326 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7807958065355386263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: a439c9e1-6c42-44ae-b15b-489f124b906a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: That's bleak...
+  children:
+  - 2ea470ad-061b-4d8e-bb15-d47b4b350c20
+  rect:
+    serializedVersion: 2
+    x: 900
+    y: 292
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6200634286752428995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: ed5c5aa2-c33c-471c-9f92-a16795a50a97
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Really? Because it feels like we are just some sort of project... For some
+    guy simultaneously working and rubbing a dog's tummy with his foot...
+  children:
+  - 79896a5f-b5f5-4004-bdfb-301e66482b2e
+  - d0079284-587b-4023-88bb-db9e3714d255
+  rect:
+    serializedVersion: 2
+    x: 540
+    y: 70
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5445635583341996516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: c9f247d3-5729-4843-8dd9-5393f9136ffc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Does it matter?
+  children:
+  - 8507e841-ce57-461c-a615-ecd70e6419ed
+  rect:
+    serializedVersion: 2
+    x: 304
+    y: 356
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5158081807051316991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 8507e841-ce57-461c-a615-ecd70e6419ed
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I suppose not. I guess I'd be standing here either way...
+  children:
+  - 1351779f-3a40-4ab6-913e-db9a5466860a
+  - a439c9e1-6c42-44ae-b15b-489f124b906a
+  rect:
+    serializedVersion: 2
+    x: 618
+    y: 412
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3686067623139253093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: fc61e505-3f0a-4b06-b7c3-81e888391214
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Of course it is!
+  children:
+  - ed5c5aa2-c33c-471c-9f92-a16795a50a97
+  rect:
+    serializedVersion: 2
+    x: 289
+    y: 153
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f36d438d7f977e48b834fa175ef0b82, type: 3}
+  m_Name: Are we real
+  m_EditorClassIdentifier: 
+  allowChoices: 1
+  nodes:
+  - {fileID: 7965558815803085799}
+  - {fileID: -3686067623139253093}
+  - {fileID: -5445635583341996516}
+  - {fileID: -6200634286752428995}
+  - {fileID: -5158081807051316991}
+  - {fileID: 5771499830652051188}
+  - {fileID: 6512518711360073303}
+  - {fileID: -7807958065355386263}
+  - {fileID: 3207459289773312281}
+  - {fileID: 2343571104173052354}
+  - {fileID: 5872801611462560537}
+--- !u!114 &2343571104173052354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 2ea470ad-061b-4d8e-bb15-d47b4b350c20
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Yeah... it is, huh?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1166
+    y: 163
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: GiveQuest
+  condition:
+    and: []
+--- !u!114 &3207459289773312281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 79896a5f-b5f5-4004-bdfb-301e66482b2e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: How oddly specific.
+  children:
+  - 2ea470ad-061b-4d8e-bb15-d47b4b350c20
+  rect:
+    serializedVersion: 2
+    x: 782
+    y: 7
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &5771499830652051188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 1351779f-3a40-4ab6-913e-db9a5466860a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: That's the spirit!
+  children:
+  - 137d726e-9f48-4ca7-8183-33e29e406511
+  rect:
+    serializedVersion: 2
+    x: 899
+    y: 494
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &5872801611462560537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: d0079284-587b-4023-88bb-db9e3714d255
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No... it really doesn't.
+  children:
+  - 8507e841-ce57-461c-a615-ecd70e6419ed
+  rect:
+    serializedVersion: 2
+    x: 794
+    y: 171
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6512518711360073303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 137d726e-9f48-4ca7-8183-33e29e406511
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thanks?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1171
+    y: 399
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: GiveQuest
+  condition:
+    and: []
+--- !u!114 &7965558815803085799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 9d075b63-e09f-428d-ba5d-003e8a293529
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Do you think any of this is real?
+  children:
+  - fc61e505-3f0a-4b06-b7c3-81e888391214
+  - c9f247d3-5729-4843-8dd9-5393f9136ffc
+  rect:
+    serializedVersion: 2
+    x: 25
+    y: 244
+    width: 200
+    height: 100
+  isRoot: 1
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

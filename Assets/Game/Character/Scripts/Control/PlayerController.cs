@@ -40,7 +40,6 @@ namespace RPG.Control
             }
             if (InteractWithComponent()) return;
             if(InteractWithMovement()) return;
-            print("nothing to do");
             SetCursor(CursorType.None);
         }
 

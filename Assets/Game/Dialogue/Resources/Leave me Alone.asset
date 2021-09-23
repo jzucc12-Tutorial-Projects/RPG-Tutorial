@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8694352908683496055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: d6b7f1b7-fe88-4465-9287-96ac536b131d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Leave me Alone
+  children:
+  - 45e8eb37-1738-4af5-90d5-74882e031346
+  rect:
+    serializedVersion: 2
+    x: 125
+    y: 95
+    width: 200
+    height: 100
+  isRoot: 1
+  onEnterAction: Test enter action
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4244429214413072782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 45e8eb37-1738-4af5-90d5-74882e031346
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: But...
+  children:
+  - 075afa65-6c31-4328-a664-88494c951d35
+  rect:
+    serializedVersion: 2
+    x: 364
+    y: 95
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2266711376405556054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 075afa65-6c31-4328-a664-88494c951d35
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I SAID ALONE!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 604
+    y: 95
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: Attack
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f36d438d7f977e48b834fa175ef0b82, type: 3}
+  m_Name: Leave me Alone
+  m_EditorClassIdentifier: 
+  allowChoices: 0
+  nodes:
+  - {fileID: -8694352908683496055}
+  - {fileID: -4244429214413072782}
+  - {fileID: -2266711376405556054}

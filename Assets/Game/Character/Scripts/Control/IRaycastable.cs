@@ -14,5 +14,6 @@ public enum CursorType
     Combat = 2,
     UI = 3,
     pickup = 4,
-    fullPickup = 5
+    fullPickup = 5,
+    Dialogue = 6
 }

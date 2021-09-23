@@ -1,0 +1,443 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7630427449566696443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: d1da8515-3a2b-4012-bc39-70a84ee8b891
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Sorry it had to end this way...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 134
+    y: 29
+    width: 200
+    height: 100
+  isRoot: 1
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Down the Rabbit Hole
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Down the Rabbit Hole
+        negate: 0
+--- !u!114 &-5441058530877539050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 8c808415-9233-446f-bee5-2e5a11373c01
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Hi?
+  children:
+  - 757dd142-5227-48f0-bc88-62979b65313e
+  rect:
+    serializedVersion: 2
+    x: 440
+    y: 332
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4045255110895011237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 37080c0a-b98d-40fe-933f-ff383a4c084d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You ain't ready...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 136
+    y: 407
+    width: 200
+    height: 100
+  isRoot: 1
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Down the Rabbit Hole
+        negate: 1
+      - predicate: CompletedObjective
+        parameters:
+        - Down the Rabbit Hole
+        - Ponder existence by the lake
+        negate: 1
+--- !u!114 &-1275187636356414424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: e40209fd-9036-423d-8077-b89b7c7d95c5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: The name is Neo, not John.
+  children:
+  - d31d4fe1-422a-440d-8eea-c0a49f62b6e1
+  rect:
+    serializedVersion: 2
+    x: 436
+    y: 204
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-758118171933479983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 1963c913-01c7-4f58-bda3-3baec31ce37e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: What's wrong? Don't remember your own name? Anyway, let's get to it.
+  children:
+  - 0b082db2-b1d7-409a-afe9-79643d73d471
+  rect:
+    serializedVersion: 2
+    x: 662
+    y: 94
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-738612970980800965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 92717d0c-7d63-4d82-9f62-faffa1f52967
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Who is John?
+  children:
+  - 1963c913-01c7-4f58-bda3-3baec31ce37e
+  rect:
+    serializedVersion: 2
+    x: 438
+    y: 95
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-268356242521629887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 10ec7017-9933-4767-928f-a2ec66c0c704
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Red pill
+  children:
+  - 93a03528-2fb1-4708-8f47-5a1f97553b5a
+  rect:
+    serializedVersion: 2
+    x: 1197
+    y: 111
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-165807156071458191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 59c7ab5e-9937-4876-a0c2-195a1e10b044
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Loser
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1457
+    y: 294
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f36d438d7f977e48b834fa175ef0b82, type: 3}
+  m_Name: Morpheus
+  m_EditorClassIdentifier: 
+  allowChoices: 1
+  nodes:
+  - {fileID: 3506839771499421329}
+  - {fileID: -738612970980800965}
+  - {fileID: -5441058530877539050}
+  - {fileID: -758118171933479983}
+  - {fileID: -1275187636356414424}
+  - {fileID: 8100143312896219326}
+  - {fileID: 2853941455166973696}
+  - {fileID: 7802544124475986545}
+  - {fileID: -268356242521629887}
+  - {fileID: 7584186514100402000}
+  - {fileID: -165807156071458191}
+  - {fileID: 3403163769574656628}
+  - {fileID: -4045255110895011237}
+  - {fileID: -7630427449566696443}
+--- !u!114 &2853941455166973696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: d31d4fe1-422a-440d-8eea-c0a49f62b6e1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: And my name is Perry White, ha! Now, decision time.
+  children:
+  - 0b082db2-b1d7-409a-afe9-79643d73d471
+  rect:
+    serializedVersion: 2
+    x: 656
+    y: 204
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &3403163769574656628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 93a03528-2fb1-4708-8f47-5a1f97553b5a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Only the first Matrix was any good.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1447
+    y: 111
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: Pill
+  condition:
+    and: []
+--- !u!114 &3506839771499421329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 871cd685-6684-41b0-8fbd-697d0872e32b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hey there John...
+  children:
+  - 92717d0c-7d63-4d82-9f62-faffa1f52967
+  - 8c808415-9233-446f-bee5-2e5a11373c01
+  - e40209fd-9036-423d-8077-b89b7c7d95c5
+  rect:
+    serializedVersion: 2
+    x: 132
+    y: 202
+    width: 200
+    height: 100
+  isRoot: 1
+  onEnterAction: Morpheus
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Down the Rabbit Hole
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Down the Rabbit Hole
+        negate: 1
+    - or:
+      - predicate: CompletedObjective
+        parameters:
+        - Down the Rabbit Hole
+        - Ponder existence by the lake
+        negate: 0
+--- !u!114 &7584186514100402000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 4129defd-bd25-4b9d-9f3c-9a241257a7de
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Blue pill
+  children:
+  - 59c7ab5e-9937-4876-a0c2-195a1e10b044
+  rect:
+    serializedVersion: 2
+    x: 1207
+    y: 294
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7802544124475986545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 0b082db2-b1d7-409a-afe9-79643d73d471
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Red pill and learn the hard truth, or blue pill and back to ignorance?
+  children:
+  - 10ec7017-9933-4767-928f-a2ec66c0c704
+  - 4129defd-bd25-4b9d-9f3c-9a241257a7de
+  rect:
+    serializedVersion: 2
+    x: 934
+    y: 206
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &8100143312896219326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2df36b60d87a1478617d5dc12cce3f, type: 3}
+  m_Name: 757dd142-5227-48f0-bc88-62979b65313e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Don't sound so confused. Now let's get to business.
+  children:
+  - 0b082db2-b1d7-409a-afe9-79643d73d471
+  rect:
+    serializedVersion: 2
+    x: 656
+    y: 332
+    width: 200
+    height: 100
+  isRoot: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
