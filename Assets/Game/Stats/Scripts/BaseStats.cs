@@ -53,7 +53,7 @@ namespace RPG.Stats
 
         public int GetStat(Stat stat)
         {
-            return Mathf.RoundToInt((GetBaseStat(stat) + GetAdditiveModifier(stat)) * (1+GetPercentageModifier(stat)/100));
+            return Mathf.RoundToInt((GetBaseStat(stat) + GetAdditiveModifier(stat)) * (1+(float)GetPercentageModifier(stat)/100));
         }
 
         private int GetBaseStat(Stat stat)

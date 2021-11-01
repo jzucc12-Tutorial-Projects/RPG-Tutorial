@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace RPG.SceneManagement
@@ -21,14 +20,14 @@ namespace RPG.SceneManagement
 
         public Coroutine FadeOut(float time)
         {
-            return Fade(0.5f, time);
+            return Fade(1, time);
         }
 
         IEnumerator FadeRoutine(float target, float time)
         {
             while (!Mathf.Approximately(myCanvasGroup.alpha, target))
             {
-                myCanvasGroup.alpha = Mathf.MoveTowards(myCanvasGroup.alpha, target, Time.deltaTime / time);
+                myCanvasGroup.alpha = Mathf.MoveTowards(myCanvasGroup.alpha, target, Time.unscaledDeltaTime / time);
                 if (myCanvasGroup.alpha > 1) myCanvasGroup.alpha = 1;
                 yield return null;
             }

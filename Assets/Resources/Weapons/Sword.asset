@@ -17,7 +17,9 @@ MonoBehaviour:
   description: Slice 'em up
   icon: {fileID: 21300000, guid: d19901b0ee3c38743a7d383bd484b0b5, type: 3}
   pickup: {fileID: 9057737910243861511, guid: ea3c37c53e31f5a43815f3f354fcf384, type: 3}
-  stackable: 0
+  stackable: 1
+  buyPrice: 25
+  category: 2
   allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: b2f0ffa433a703b49884539af764a1da, type: 2}
   equippedPrefab: {fileID: 2687490279683769977, guid: 22fb7c0f259cf9149a8890f7e750a1da, type: 3}

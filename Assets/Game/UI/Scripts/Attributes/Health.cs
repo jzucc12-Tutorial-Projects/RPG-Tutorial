@@ -12,7 +12,8 @@ namespace RPG.Attributes
         [SerializeField] LazyValue<int> health;
         [SerializeField] float regenPercent = 70;
         [SerializeField] UnityEvent<int> DamageTaken = null;
-        [SerializeField] UnityEvent OnDie = null;
+        [SerializeField] float respawnPercentage = 0.5f;
+        public UnityEvent OnDie = null;
 
         bool isAlive = true;
 
@@ -48,13 +49,19 @@ namespace RPG.Attributes
 
         public bool IsAlive()
         {
-            return isAlive;
+            return health.value > 0;
+        }
+
+        public void Respawn()
+        {
+            Heal((int)(GetMaxHealth() * respawnPercentage));
+            Revive();
         }
 
         public void RestoreState(object state)
         {
             health.value = (int)state;
-            if (health.value <= 0)
+            if (!IsAlive())
             {
                 Die();
             }
@@ -69,7 +76,7 @@ namespace RPG.Attributes
         {
             int roundDamage = Mathf.FloorToInt(damage);
             health.value = Mathf.Max(0, health.value - roundDamage);
-            if (health.value <= 0)
+            if (!IsAlive())
             {
                 OnDie?.Invoke();
                 Die();
@@ -92,7 +99,7 @@ namespace RPG.Attributes
             health.value = Mathf.Max(health.value, regenHP);
         }
 
-        int GetMaxHealth()
+        public int GetMaxHealth()
         {
             return GetComponent<BaseStats>().GetStat(Stat.Health);
         }
@@ -111,10 +118,16 @@ namespace RPG.Attributes
 
         private void Die()
         {
-            if (!isAlive) return;
+            if (!IsAlive()) return;
             GetComponent<Animator>().SetTrigger("Die");
-            isAlive = false;
             GetComponent<ActionScheduler>().CancelCurrentAction();
+        }
+
+        void Revive()
+        {
+            if(IsAlive()) return;
+            GetComponent<Animator>().Rebind();
+            isAlive = true;
         }
     }
 }

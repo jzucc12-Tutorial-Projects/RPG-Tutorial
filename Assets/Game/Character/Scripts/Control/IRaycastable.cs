@@ -15,5 +15,6 @@ public enum CursorType
     UI = 3,
     pickup = 4,
     fullPickup = 5,
-    Dialogue = 6
+    Dialogue = 6,
+    Shop = 7
 }

@@ -1,24 +1,55 @@
 ﻿using System.Collections;
 using UnityEngine;
 using GameDevTV.Saving;
+using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 namespace RPG.SceneManagement
 {
     public class SavingWrapper : MonoBehaviour
     {
-        const string defaultSaveFile = "save";
         [SerializeField] float fadeInTime = 0.2f;
+        [SerializeField] float fadeOutTime = 0.2f;
+        [SerializeField] int firstScene = 1;
+        [SerializeField] int menuScene = 0;
+        string saveNameKey = "currentSaveName";
+        
 
-        private void Awake()
+        public void ContinueGame()
         {
+            if(!PlayerPrefs.HasKey(saveNameKey)) return;
+            if(!GetComponent<SavingSystem>().SaveFileExists(GetSaveName())) return;
+            StartCoroutine(LoadLastScene());
+        }
+
+        public void NewGame(string saveFile)
+        {
+            if(string.IsNullOrEmpty(saveFile)) return;
+            SetSaveName(saveFile);
+            StartCoroutine(LoadFirstScene());
+        }
+
+        public void LoadGame(string saveFile)
+        {
+            if(string.IsNullOrEmpty(saveFile)) return;
+            SetSaveName(saveFile);
+            if(!GetComponent<SavingSystem>().SaveFileExists(GetSaveName())) return;
             StartCoroutine(LoadLastScene());
         }
 
         IEnumerator LoadLastScene()
         {
-            yield return GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile);
             Fader fader = FindObjectOfType<Fader>();
-            fader.FadeOutImmediate();
+            yield return fader.FadeOut(fadeOutTime);
+            yield return GetComponent<SavingSystem>().LoadLastScene(GetSaveName());
+            yield return fader.FadeIn(fadeInTime);
+        }
+
+        IEnumerator LoadFirstScene()
+        {
+            Fader fader = FindObjectOfType<Fader>();
+            yield return fader.FadeOut(fadeOutTime);
+            yield return SceneManager.LoadSceneAsync(firstScene);
             yield return fader.FadeIn(fadeInTime);
         }
 
@@ -40,17 +71,45 @@ namespace RPG.SceneManagement
 
         public void Save()
         {
-            GetComponent<SavingSystem>().Save(defaultSaveFile);
+            GetComponent<SavingSystem>().Save(GetSaveName());
         }
 
         public void Load()
         {
-            GetComponent<SavingSystem>().Load(defaultSaveFile);
+            GetComponent<SavingSystem>().Load(GetSaveName());
         }
 
         public void Delete()
         {
-            GetComponent<SavingSystem>().Delete(defaultSaveFile);
+            GetComponent<SavingSystem>().Delete(GetSaveName());
+        }
+
+        string GetSaveName()
+        {
+            return PlayerPrefs.GetString(saveNameKey);
+        }
+
+        void SetSaveName(string name)
+        {
+            PlayerPrefs.SetString(saveNameKey, name);
+        }
+
+        public IEnumerable<string> ListSaves()
+        {
+            return GetComponent<SavingSystem>().ListSaves();
+        }
+
+        public void LoadMenu()
+        {
+            StartCoroutine(LoadMenuRoutine());
+        }
+
+        IEnumerator LoadMenuRoutine()
+        {
+            Fader fader = FindObjectOfType<Fader>();
+            yield return fader.FadeOut(fadeOutTime);
+            yield return SceneManager.LoadSceneAsync(menuScene);
+            yield return fader.FadeIn(fadeInTime);
         }
     }
 }

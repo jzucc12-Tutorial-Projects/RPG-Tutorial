@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using RPG.Attributes;
 using RPG.Control;
 using UnityEngine;
 
@@ -18,6 +19,9 @@ namespace GameDevTV.Assets.Dialogues
         public bool HandleRaycast(PlayerController callingController)
         {
             if(myDialogue == null) 
+                return false;
+
+            if(GetComponent<Health>() && !GetComponent<Health>().IsAlive())
                 return false;
             
             if(Input.GetMouseButtonDown(0))

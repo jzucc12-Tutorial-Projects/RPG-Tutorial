@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395acf444afa2c548be60d86e2a4d58b, type: 3}
+  m_Name: Ability Health Potion
+  m_EditorClassIdentifier: 
+  itemID: 9e33a8a3-6bcd-4d42-a8b9-229368d9d843
+  displayName: Health Potion
+  description: Heals you
+  icon: {fileID: 21300000, guid: aba0f700d91d4fc4fa8c724899ab04ab, type: 3}
+  pickup: {fileID: 2576091111749885134, guid: 6e2c2636f5084e143a44c4f02b284de2, type: 3}
+  stackable: 1
+  buyPrice: 25
+  category: 5
+  consumable: 1
+  targetingStrategy: {fileID: 11400000, guid: 92ddc54881577834a861a718529c197b, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: 8f222c27ff5f2534db8084e7c1a1326b, type: 2}
+  - {fileID: 11400000, guid: db208ff658e365f479e5d934905afb9d, type: 2}
+  cooldownTimer: 0
+  manaCost: 0

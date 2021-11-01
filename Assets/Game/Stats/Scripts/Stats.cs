@@ -5,6 +5,10 @@
         Health,
         ExperienceReward,
         ExperienceToLevelUp,
-        Damage
+        Damage,
+        Mana,
+        ManaRegenRate,
+        TotalTraitPoints,
+        BuyingPercentage
     }
 }

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395acf444afa2c548be60d86e2a4d58b, type: 3}
+  m_Name: Fire Spray
+  m_EditorClassIdentifier: 
+  itemID: 8f4b4e6b-896a-416d-b4b1-b13854b09d5e
+  displayName: Fire Spray
+  description: Spray those flames
+  icon: {fileID: 21300000, guid: a1ec2c0ddc0da634b85f0f465fec2d0d, type: 3}
+  pickup: {fileID: 2576091111749885134, guid: 6e2c2636f5084e143a44c4f02b284de2, type: 3}
+  stackable: 0
+  buyPrice: 100
+  category: 5
+  consumable: 0
+  targetingStrategy: {fileID: 11400000, guid: b31173cf36c8c1d46a72abd69cd91d34, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: 2ff8e97e92596d54dbe6c453c3f14efd, type: 2}
+  - {fileID: 11400000, guid: 4556cae4201f63d4ba7b63293676c86e, type: 2}
+  - {fileID: 11400000, guid: d72973fef31ee4c488a241c60eb43870, type: 2}
+  cooldownTimer: 5
+  manaCost: 100

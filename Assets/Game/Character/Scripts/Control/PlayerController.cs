@@ -4,12 +4,14 @@ using System;
 using RPG.Attributes;
 using UnityEngine.EventSystems;
 using UnityEngine.AI;
+using GameDevTV.Inventories;
 
 namespace RPG.Control
 {
     public class PlayerController : MonoBehaviour
     {
         Health myHealth;
+        ActionStore actionStore;
         bool isDragging = false;
 
         [System.Serializable]
@@ -23,10 +25,12 @@ namespace RPG.Control
 
         [SerializeField] CursorMapping[] cursorMappings = null;
         [SerializeField] float maxNavMeshDistance = 1f;
+        [SerializeField] int numberOfAbilities = 6;
 
-        private void Start()
+        private void Awake()
         {
             myHealth = GetComponent<Health>();
+            actionStore = GetComponent<ActionStore>();
         }
 
         private void Update()
@@ -38,6 +42,8 @@ namespace RPG.Control
                 SetCursor(CursorType.None);
                 return;
             }
+
+            UseAbilities();
             if (InteractWithComponent()) return;
             if(InteractWithMovement()) return;
             SetCursor(CursorType.None);
@@ -58,6 +64,17 @@ namespace RPG.Control
 
             if (isDragging) return true;
             return false;
+        }
+
+        private void UseAbilities()
+        {
+            for(int ii = 0; ii < numberOfAbilities; ii++)
+            {
+                if(Input.GetKeyDown(KeyCode.Alpha1 + ii))
+                {
+                    actionStore.Use(ii, gameObject);
+                }
+            }
         }
 
         bool InteractWithComponent()
@@ -142,7 +159,7 @@ namespace RPG.Control
             return cursorMappings[0];
         }
 
-        private static Ray GetMouseRay()
+        public static Ray GetMouseRay()
         {
             return Camera.main.ScreenPointToRay(Input.mousePosition);
         }
